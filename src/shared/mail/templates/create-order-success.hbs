@@ -1,0 +1,242 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div
+      style="
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+          Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #24292e;
+      "
+    >
+      <table style="max-width: 544px; margin-right: auto; margin-left: auto">
+        <tbody>
+          <tr>
+            <td style="padding: 16px">
+              <center>
+                <table style="max-width: 768px; width: 100%; margin: 16px 0">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h2
+                          style="
+                            margin-top: 8px;
+                            margin-bottom: 0;
+                            font-size: 24px;
+                            font-weight: 400;
+                            line-height: 1.25;
+                          "
+                        >
+                          Create success order #{{order.id}}
+                        </h2>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table style="border-radius: 6px; border: 1px solid #e1e4e8">
+                  <tbody style="width: 100%; text-align: center">
+                    <tr>
+                      <td style="padding: 24px">
+                        <h3
+                          style="
+                            margin-top: 0;
+                            margin-bottom: 16px;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 1.25;
+                            width: 100%;
+                          "
+                        >
+                          Car Rent order information
+                        </h3>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          Hi {{user.fullName}},
+                        </p>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          Order #{{order.id}} has been created successfully at
+                          {{order.createdAt}}.
+                        </p>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          Please log in to Car Rent to view your order.
+                        </p>
+                        <a
+                          href="orders/{{order.id}}"
+                          style="
+                            background-color: #28a745;
+                            color: #fff;
+                            text-decoration: none;
+                            display: inline-block;
+                            font-size: inherit;
+                            margin-right: auto;
+                            margin-left: auto;
+                            font-weight: 500;
+                            line-height: 1.5;
+                            white-space: nowrap;
+                            vertical-align: middle;
+                            border-radius: 0.5em;
+                            padding: 0.75em 1.5em;
+                            border: 1px solid #28a745;
+                            margin-bottom: 16px;
+                            width: 150px;
+                          "
+                          target="_blank;"
+                          >View Order</a
+                        >
+                        <p
+                          style="
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                            text-align: left;
+                          "
+                        >
+                          If you’re having trouble clicking the button, copy and
+                          paste the URL below into your web browser:
+                          <a
+                            href="orders/{{order.id}}"
+                            style="color: #0366d6; text-decoration: none"
+                            >orders/{{order.id}}</a
+                          >
+                        </p>
+                        <hr>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                          "
+                        >
+                          ORDER INFORMATION
+                        </p>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          Order ID: {{order.id}}
+                        </p>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          Order Date: {{order.createdAt}}
+                        </p>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          Pick Up Date: {{orderDetail.pickUpAt}}
+                        </p>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          Drop Off Date: {{orderDetail.dropOffAt}}
+                        </p>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          Sub Price: ${{orderDetail.subPrice}}
+                        </p>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                          "
+                        >
+                          Total Price: ${{order.totalPrice}}
+                        </p>
+                        <hr>
+                        <p
+                          style="
+                            text-align: left;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                          "
+                        >
+                          If you are having any issues with your order, please
+                          don't hesitate to contact us by replying to this mail.
+                        </p>
+                        <p
+                          style="
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                            text-align: left;
+                          "
+                        >
+                          Thanks,
+                          <br />Team 1
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p
+                  style="
+                    margin: 32px 0 10px;
+                    color: #6a737d;
+                    font-size: 14px;
+                    width: 100%;
+                    text-align: center;
+                  "
+                >
+                  You're receiving this email because you have an account on Car
+                  Rent.
+                </p>
+                <p
+                  style="
+                    margin: 16px 0 10px;
+                    color: #6a737d;
+                    font-size: 12px;
+                    text-align: center;
+                  "
+                >
+                  Team 1 - RS22 ・Rising Stars, Vietnam
+                </p>
+              </center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

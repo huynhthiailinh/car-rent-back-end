@@ -1,0 +1,23 @@
+{
+  "CUS-0001": {
+    "http_code": "400",
+    "app_code": "INVALID_PARAMETER",
+    "title": "This field should not be empty.",
+    "prod": "This field should not be empty.",
+    "inter": "This field should not be empty."
+  },
+  "CUS-0602": {
+    "http_code": "404",
+    "app_code": "OBJECT_NOT_FOUND",
+    "title": "System error",
+    "prod": "An internal server error occurred. Please contact us if the problem is not solved.",
+    "inter": "I can't find a resource."
+  },
+  "CUS-0603": {
+    "http_code": "400",
+    "app_code": "INVALID_PARAMETER",
+    "title": "System error",
+    "prod": "One or more field input values are invalid. Please check again.",
+    "inter": "The request format is incorrect."
+  }
+}

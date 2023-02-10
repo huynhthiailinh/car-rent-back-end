@@ -1,0 +1,9 @@
+{
+  "CAR-0001": {
+    "http_code": "404",
+    "app_code": "NOT_FOUND",
+    "title": "Car with id not found.",
+    "prod": "Car with id not found.",
+    "inter": "Car with id not found."
+  }
+}

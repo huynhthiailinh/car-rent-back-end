@@ -1,0 +1,23 @@
+{
+  "PRO-0001": {
+    "http_code": "404",
+    "app_code": "OBJECT_NOT_FOUND",
+    "title": "Promo code not found.",
+    "prod": "Promo code not found.",
+    "inter": "Promo code not found."
+  },
+  "PRO-0002": {
+    "http_code": "400",
+    "app_code": "INVALID_PARAMETER",
+    "title": "Promo expired.",
+    "prod": "Promo expired.",
+    "inter": "Promo expired."
+  },
+  "PRO-0003": {
+    "http_code": "400",
+    "app_code": "INVALID_PARAMETER",
+    "title": "Promo quantity not enough.",
+    "prod": "Promo quantity not enough.",
+    "inter": "Promo quantity not enough."
+  }
+}

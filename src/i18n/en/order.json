@@ -1,0 +1,44 @@
+{
+  "ORD-0001": {
+    "http_code": "400",
+    "app_code": "BAD_REQUEST",
+    "title": "Cannot rent now.",
+    "prod": "Some errors about order information. Please try again!",
+    "inter": "Some errors about order information. Please try again!"
+  },
+  "ORD-0002": {
+    "http_code": "400",
+    "app_code": "INVALID_PARAMETER",
+    "title": "This car cannot be picked up in this city.",
+    "prod": "This car cannot be picked up in this city.",
+    "inter": "This car cannot be picked up in this city."
+  },
+  "ORD-0003": {
+    "http_code": "400",
+    "app_code": "INVALID_PARAMETER",
+    "title": "This car cannot be dropped off in this city.",
+    "prod": "This car cannot be dropped off in this city.",
+    "inter": "This car cannot be dropped off in this city."
+  },
+  "ORD-0004": {
+    "http_code": "400",
+    "app_code": "INVALID_PARAMETER",
+    "title": "Car is not available for purchase.",
+    "prod": "Car cannot be rented this time. Please rent another time.",
+    "inter": "Car cannot be rented this time. Please rent another time."
+  },
+  "ORD-0005": {
+    "http_code": "400",
+    "app_code": "INVALID_PARAMETER",
+    "title": "Drop off must after pick up.",
+    "prod": "Drop off must after pick up.",
+    "inter": "Drop off must after pick up."
+  },
+  "ORD-0006": {
+    "http_code": "400",
+    "app_code": "INVALID_PARAMETER",
+    "title": "Rental time must after 6 hours from now on.",
+    "prod": "Rental time must after 6 hours from now on.",
+    "inter": "Rental time must after 6 hours from now on."
+  }
+}

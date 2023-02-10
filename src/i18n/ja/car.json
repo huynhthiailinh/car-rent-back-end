@@ -1,0 +1,9 @@
+{
+  "CAR-0001": {
+    "http_code": "404",
+    "app_code": "NOT_FOUND",
+    "title": "ID の車が見つかりません。",
+    "prod": "ID の車が見つかりません。",
+    "inter": "ID の車が見つかりません。"
+  }
+}
